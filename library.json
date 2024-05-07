@@ -1,0 +1,8 @@
+{
+  "name": "jsoncons",
+  "version": "0.0.0+20240507164947",
+  "build": {
+    "includeDir": "include",
+    "srcFilter": "-<*> -<fuzzers> -<examples> -<examples_boost> -<test>"
+  }
+}

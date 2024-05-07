@@ -1,3 +1,10 @@
+if(ESP_PLATFORM)
+   # Build ArduinoJson as an ESP-IDF component
+   idf_component_register(INCLUDE_DIRS include)
+   target_compile_definitions(${COMPONENT_LIB} INTERFACE)
+   return()
+endif()
+
 cmake_minimum_required(VERSION 3.1)
 
 project(jsoncons CXX)
